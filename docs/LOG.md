@@ -18,3 +18,11 @@
 ### Next action
 
 Read the user's answers and review feedback, update decision statuses and the M1 plan, and commit the documentation round. Before any implementation, resolve necessary architecture/persistence/access choices and obtain an explicit instruction to build. Do not advance merely because another session elapsed.
+
+## 2026-09-24 — repository publishing and README
+
+- At the user's request, configured `origin` as `https://github.com/Jihaoyb/MyWork.git` and successfully pushed initialization commit `26a853f` on main; main now tracks origin/main.
+- Added a root README at the user's request, covering purpose, current documentation-only status, the first milestone, progress rules, confirmed stack versus undecided providers, later scope, and a documentation index.
+- Rechecked the project records: the four foundational questions and PRD/milestone review are still pending. No architecture or infrastructure choice was ratified by requesting a README.
+- README verification: check relative documentation links and Git whitespace before committing. No application tests apply to this documentation change.
+- Next action: answer the existing foundational questions, then refine the milestone and record necessary architecture/persistence/access decisions before implementation.
