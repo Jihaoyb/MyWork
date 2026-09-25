@@ -39,20 +39,20 @@ See the [roadmap](docs/ROADMAP.md) for scope and acceptance criteria.
 
 ## Technology direction
 
-Next.js and TypeScript are confirmed, with a hosted web app as the product direction. Whether the first milestone should begin as a local browser trial or a private hosted app remains open.
+Next.js and TypeScript are confirmed, with a hosted web app as the product direction. M1 will run on Vercel Hobby with Vercel Authentication set to All Deployments, covering production and previews.
 
-Hosting, database, and authentication providers have not been selected. Vercel, Supabase, and GitHub OAuth/Auth.js are proposals, not adopted dependencies.
+Hosting and deployment protection are confirmed; no services have been provisioned. The database will be selected separately before implementation. Supabase and GitHub OAuth/Auth.js remain unratified proposals.
 
 ## What comes next
 
-Resolve the four remaining foundational questions:
+The foundational decisions were confirmed on September 25, 2026:
 
-1. Which existing project-time allocation will MyWork replace?
-2. Which real task will demonstrate the first milestone, and what observable result counts as done?
-3. Does the first milestone need cross-device hosted access, or is a local browser trial sufficient?
-4. Which first-week outcome matters most: easier resumption, more reliable starts, or stopping at chosen boundaries?
+- M1 temporarily replaces Unity work time.
+- Use that day's task from the existing ChatGPT scheduled task. Done means its stated observable outcome is achieved and reported.
+- Host on Vercel Hobby with Vercel Authentication protecting the entire deployment; select the database separately.
+- Prioritize resuming unfinished work without replanning. Easier starting is secondary; test stopping support later.
 
-Then review the PRD and milestone scope, document the necessary architecture, persistence, recovery, and access decisions, and begin implementation when instructed. MyWork development replaces part of existing project time rather than adding another workload.
+Next, compare and choose the database, document architecture, persistence, recovery, and access boundaries, and review the implementation plan. M1 retains manual task entry; new daily assignments do not automatically replace unfinished work. Implementation begins when instructed.
 
 ## Later work
 
