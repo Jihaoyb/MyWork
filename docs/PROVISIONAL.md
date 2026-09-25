@@ -14,4 +14,10 @@ These are recommendations, not confirmed decisions. No unanswered question autho
 | P08 — superseded | Local browser milestone before hosted delivery. | User selected Vercel Hobby with Vercel Authentication on 2026-09-25 (D15). No longer an active recommendation. |
 | P09 — confirmed for M1 | Prioritize resuming without replanning. | User confirmed on 2026-09-25 (D16); easier starting is secondary, stopping support later. Retained here as history, not an open suggestion. |
 
+## Architecture recommendations — 2026-09-25
+
+- **P10:** Neon Free Postgres for M1, with server-only access. Compare Supabase Free in DATABASE.md; no provider chosen.
+- **P11:** One Next.js modular monolith with server-rendered reads, Server Actions, a shared task service, and separate production/synthetic nonproduction storage. ARCHITECTURE.md describes the proposed records, mutation safeguards, access boundary, and tests; all new design details await review.
+- **P12:** User-triggered complete exports after actual-use days and before migrations, stored encrypted outside Git/provider; rehearse restoration before reliance. Acceptable loss, storage destination, and retention remain open. No recurring backup task is authorized.
+
 Timing and reminder behavior must be configurable before trials depend on them. Dashboard-only delivery remains confirmed. There are no clinical prescriptions, new notification channels, or scheduled automations here. Change one setting at a time after reviewing experience; record evidence and user ratification in DECISIONS.md.

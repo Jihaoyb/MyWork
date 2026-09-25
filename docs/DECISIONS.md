@@ -49,3 +49,8 @@ Before use, verify Jihao's authorized access and denial of unauthorized access t
 - After core loop evidence: calendar writer and permissions; MCP trust boundaries and interactive/scheduled access.
 - Before publishing: platform feasibility/policies, credentials, background execution, retries/idempotency, attribution, account health, and explicit post-publish edit/delete scope.
 - Before broader personalization or public launch: research outputs, consent, privacy, data isolation, audience, and evaluation.
+
+
+## Architecture discovery — 2026-09-25 (open)
+
+Prepared DATABASE.md and ARCHITECTURE.md for review. P10–P12 are assistant recommendations, not ratified choices. Pending: database selection; architecture/access/state-model review; recovery tolerance and export approach. The instruction to continue advances documentation/discovery and does not select a provider or authorize provisioning. All D01–D16 remain unchanged.

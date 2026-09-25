@@ -36,3 +36,12 @@ Read the user's answers and review feedback, update decision statuses and the M1
 - Retained manual entry and stable task identity across new daily proposals. The actual day's task text has not been retrieved; no schedule or calendar was changed.
 - Next action: compare database options and agree on persistence, recovery, and database-access design before implementation. PRD/plan review remains pending; no code, dependencies, or services were added.
 - Verification: reviewed the documentation diff, checked for stale open-question wording in current planning documents, and passed Git whitespace checks. Product behavior and deployed access remain untested.
+
+## 2026-09-25 — database and architecture discovery
+
+- Compared Neon Free and Supabase Free using official pricing/docs; recommended Neon provisionally for M1's server-only Postgres and preview isolation. Logged free-tier recovery/availability limits and paid-upgrade risks in DATABASE.md.
+- Added ARCHITECTURE.md covering one-app boundaries, records/relationships, partial/skipped/resume semantics, atomic reports and retries, Vercel/private database boundaries, environment separation, migration recovery, and verification. New choices remain P10–P12, not user approvals.
+- Proposed manual encrypted exports with an explicit possible-loss window; destination, retention, and user tolerance remain unresolved. No backup automation or service was created.
+- Updated README/navigation, agent reading instructions, roadmap, decision status, and provisional suggestions. Original process/addendum files preserved. No code, dependencies, live database, or deployment changes.
+- Next action: review the database recommendation, architecture proposal, and recovery trade-off with Jihao. Record answers before selecting providers or starting implementation.
+- Verification: local Markdown links resolve, original update copies remain identical, and Git whitespace checks pass. Diagrams were reviewed as source; no rendered-diagram or product-flow test is claimed.

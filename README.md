@@ -68,6 +68,8 @@ These are later directions, not implemented features. The original publishing-fi
 | Document | Purpose |
 | --- | --- |
 | [PRD](docs/PRD.md) | Reconciled product requirements and acceptance scenarios; draft for review. |
+| [Database comparison](docs/DATABASE.md) | Neon and Supabase trade-offs, costs, and recovery proposal; decision pending. |
+| [Architecture](docs/ARCHITECTURE.md) | Proposed app boundaries, records, access, and verification; draft for review. |
 | [Decisions](docs/DECISIONS.md) | Confirmed choices, reasons, and open questions. |
 | [Provisional suggestions](docs/PROVISIONAL.md) | Unratified recommendations and experiments. |
 | [Roadmap](docs/ROADMAP.md) | First-milestone plan and later sequencing. |

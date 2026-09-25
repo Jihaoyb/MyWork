@@ -9,6 +9,7 @@ Before doing any work, read these files completely, in order:
 5. `docs/PRD.md` — reconciled product requirements.
 6. `docs/ROADMAP.md` — milestone scope and review gates.
 7. `docs/LOG.md` — actual progress, evidence, and next action.
+8. `docs/DATABASE.md` and `docs/ARCHITECTURE.md` — technical proposals and their current approval status.
 
 Begin each future session with two sentences stating where the project stands and what comes next. Repository records, never chat memory, are the durable source of truth. New explicit user instructions take precedence; record their effects. Where the original process conflicts with the update, the update wins. `docs/MyWork-PRD-update.md` is the preserved original import; `docs/PRD-update.md` is its canonical copy. Consult the canonical file going forward.
 

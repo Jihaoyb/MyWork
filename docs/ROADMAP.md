@@ -6,7 +6,7 @@ Review draft · updated 2026-09-25. Replaces the original publishing-first M0/MV
 
 Inventory and preserve existing files; retain Git history; add session guidance, separate confirmed/provisional records, reconcile PRD, and propose the first milestone. Ask no more than four foundational questions per round. No implementation or deployment.
 
-Foundational answers recorded on 2026-09-25: Unity allocation, existing ChatGPT daily-task source, Vercel Hobby with whole-deployment Vercel Authentication, and resumption as primary success. Next: choose the database separately and document architecture, then review the implementation plan. No implementation or deployment has begun.
+Foundational answers recorded on 2026-09-25: Unity allocation, existing ChatGPT daily-task source, Vercel Hobby with whole-deployment Vercel Authentication, and resumption as primary success. Database comparison and architecture drafts are now available in DATABASE.md and ARCHITECTURE.md. Next: resolve P10–P12, complete remaining implementation details, then review the implementation plan. No implementation or deployment has begun.
 
 ## M1 — resume one real task
 
