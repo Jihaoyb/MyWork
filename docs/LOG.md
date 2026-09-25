@@ -45,3 +45,12 @@ Read the user's answers and review feedback, update decision statuses and the M1
 - Updated README/navigation, agent reading instructions, roadmap, decision status, and provisional suggestions. Original process/addendum files preserved. No code, dependencies, live database, or deployment changes.
 - Next action: review the database recommendation, architecture proposal, and recovery trade-off with Jihao. Record answers before selecting providers or starting implementation.
 - Verification: local Markdown links resolve, original update copies remain identical, and Git whitespace checks pass. Diagrams were reviewed as source; no rendered-diagram or product-flow test is claimed.
+
+## 2026-09-25 — final M1 recommendations confirmed; waiting to build
+
+- After discussing database/platform differences and modules versus microservices, Jihao explicitly confirmed the final recommendations and asked to record them and get ready for a later start confirmation.
+- Added D17–D22: Neon Free PostgreSQL, one modular Next.js/React/TypeScript app with Server Actions and server-only persistence, private Vercel access and isolated environments, bounded-trial manual recovery, and a separate implementation start gate. P10–P12 now point to their confirmed decisions; timing experiments remain provisional.
+- Synchronized PRD, architecture, database rationale, roadmap, README, and agent guidance. Added M1-IMPLEMENTATION.md with build order, acceptance evidence, and operational details still to settle. Original PROCESS.md and both update copies remain intact.
+- Backup destination/retention/key handling, exact tooling/schema, account configuration, and the real generated acceptance task remain specific implementation inputs. Manual recovery is limited to a trial; automation must be reviewed before ongoing daily reliance.
+- Next action: wait for Jihao's explicit instruction to start, then use the implementation handoff. No scaffold, package install, provisioning, deployment, calendar change, or automation occurred.
+- Verification: all local Markdown links in the updated planning documents resolve; D17–D22 exist; original source files match the prior commit; Git whitespace checks pass. No application behavior or infrastructure has been tested.

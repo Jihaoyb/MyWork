@@ -6,7 +6,7 @@ MyWork starts with progress tracking and daily execution, customized for Jihao. 
 
 ## Current status
 
-**Documentation and discovery.** The repository contains the product requirements draft, confirmed decisions, provisional experiments, milestone plan, and progress log. These establish the intended product; application behavior has not been implemented or tested.
+**M1 design confirmed; awaiting the instruction to start implementation.** The repository contains requirements, confirmed decisions, remaining experiments, architecture, an implementation handoff, and a progress log. Application behavior has not been implemented or tested.
 
 There is no application scaffold, dependency setup, database, authentication implementation, CI pipeline, or deployment yet. There are no install or run commands at this stage.
 
@@ -14,7 +14,7 @@ There is no application scaffold, dependency setup, database, authentication imp
 
 **Choose a task → start → report partial or skipped work → resume the same task.**
 
-The proposed milestone will let Jihao:
+The confirmed milestone will let Jihao:
 
 1. Select a task with a stable ID, observable outcome, concrete next action, and relevant resource.
 2. Start a session with an intended stopping point.
@@ -41,7 +41,7 @@ See the [roadmap](docs/ROADMAP.md) for scope and acceptance criteria.
 
 Next.js and TypeScript are confirmed, with a hosted web app as the product direction. M1 will run on Vercel Hobby with Vercel Authentication set to All Deployments, covering production and previews.
 
-Hosting and deployment protection are confirmed; no services have been provisioned. The database will be selected separately before implementation. Supabase and GitHub OAuth/Auth.js remain unratified proposals.
+Neon Free PostgreSQL is confirmed. One Next.js application will use server-rendered reads, Server Actions, framework-independent task rules, and server-only persistence. Production and synthetic test data stay separate. Supabase and an additional application login are not selected for M1. No services have been provisioned.
 
 ## What comes next
 
@@ -49,10 +49,10 @@ The foundational decisions were confirmed on September 25, 2026:
 
 - M1 temporarily replaces Unity work time.
 - Use that day's task from the existing ChatGPT scheduled task. Done means its stated observable outcome is achieved and reported.
-- Host on Vercel Hobby with Vercel Authentication protecting the entire deployment; select the database separately.
+- Host on Vercel Hobby with Vercel Authentication protecting the entire deployment, with Neon Free PostgreSQL for storage.
 - Prioritize resuming unfinished work without replanning. Easier starting is secondary; test stopping support later.
 
-Next, compare and choose the database, document architecture, persistence, recovery, and access boundaries, and review the implementation plan. M1 retains manual task entry; new daily assignments do not automatically replace unfinished work. Implementation begins when instructed.
+The database and architecture recommendations are now confirmed. Manual encrypted exports and a tested restore cover a bounded M1 trial; destination and retention must be specified before real-data use, and automation reviewed before ongoing daily reliance. M1 retains manual task entry; new daily assignments do not automatically replace unfinished work. Follow the [implementation handoff](docs/M1-IMPLEMENTATION.md) when Jihao explicitly confirms the start. Until then, no scaffold, installation, provisioning, or deployment.
 
 ## Later work
 
@@ -67,9 +67,10 @@ These are later directions, not implemented features. The original publishing-fi
 
 | Document | Purpose |
 | --- | --- |
-| [PRD](docs/PRD.md) | Reconciled product requirements and acceptance scenarios; draft for review. |
-| [Database comparison](docs/DATABASE.md) | Neon and Supabase trade-offs, costs, and recovery proposal; decision pending. |
-| [Architecture](docs/ARCHITECTURE.md) | Proposed app boundaries, records, access, and verification; draft for review. |
+| [PRD](docs/PRD.md) | Confirmed M1 direction and acceptance scenarios; broader scope remains staged. |
+| [Database comparison](docs/DATABASE.md) | Selected Neon database, alternatives, costs, and trial recovery limits. |
+| [Architecture](docs/ARCHITECTURE.md) | Confirmed M1 architecture baseline and remaining implementation details. |
+| [Implementation handoff](docs/M1-IMPLEMENTATION.md) | Build order, verification gates, and remaining details; awaiting start confirmation. |
 | [Decisions](docs/DECISIONS.md) | Confirmed choices, reasons, and open questions. |
 | [Provisional suggestions](docs/PROVISIONAL.md) | Unratified recommendations and experiments. |
 | [Roadmap](docs/ROADMAP.md) | First-milestone plan and later sequencing. |

@@ -9,11 +9,12 @@ Before doing any work, read these files completely, in order:
 5. `docs/PRD.md` — reconciled product requirements.
 6. `docs/ROADMAP.md` — milestone scope and review gates.
 7. `docs/LOG.md` — actual progress, evidence, and next action.
-8. `docs/DATABASE.md` and `docs/ARCHITECTURE.md` — technical proposals and their current approval status.
+8. `docs/DATABASE.md` and `docs/ARCHITECTURE.md` — confirmed technical baseline and remaining implementation details.
+9. `docs/M1-IMPLEMENTATION.md` — work order and readiness gates.
 
 Begin each future session with two sentences stating where the project stands and what comes next. Repository records, never chat memory, are the durable source of truth. New explicit user instructions take precedence; record their effects. Where the original process conflicts with the update, the update wins. `docs/MyWork-PRD-update.md` is the preserved original import; `docs/PRD-update.md` is its canonical copy. Consult the canonical file going forward.
 
-Current phase: documentation and discovery only. Do not scaffold, install dependencies, provision services, deploy, change calendars, create recurring tasks, or contact anyone. Implementation awaits review and explicit instruction. Preserve existing work and never modify the portfolio repository.
+Current phase: M1 design confirmed (D17–D21), awaiting the user's explicit implementation start (D22). Do not scaffold, install dependencies, provision services, deploy, change calendars, create recurring tasks, or contact anyone. The design confirmation is recorded; implementation awaits a separate explicit start instruction. Do not reopen the selected Neon/Next.js/Vercel baseline merely because older source documents list it as provisional. Preserve existing work and never modify the portfolio repository.
 
 Progress tracking and daily execution come first, private and customized for Jihao. Never advance task state from elapsed time, scheduled sessions, attendance, missing feedback, or generated plans. Preserve stable task identity across partial, skipped, and unreported sessions. Social publishing is later; broader psychological personalization requires research before design.
 

@@ -1,10 +1,10 @@
 # MyWork product requirements
 
-Review draft · updated 2026-09-25 · documentation/discovery phase
+M1 baseline confirmed · updated 2026-09-25 · awaiting implementation start
 
 ## Authority and problem
 
-This document reconciles PROCESS.md with PRD-update.md and the initialization request. The update takes precedence; confirmed decisions are recorded in DECISIONS.md and suggestions in PROVISIONAL.md. This is a complete product-scope draft for review, not an assertion that discovery, design, implementation, or research has finished.
+This document reconciles PROCESS.md with PRD-update.md and the initialization request. The update takes precedence; confirmed decisions are recorded in DECISIONS.md and suggestions in PROVISIONAL.md. The M1 direction and technical baseline are confirmed in D13–D21. Broader release details remain subject to discovery; no implementation, product verification, or deep research is complete.
 
 MyWork helps Jihao choose a realistic next action, begin it, preserve useful progress, stop deliberately, and resume from actual task state. Current needs include difficulty starting intended work, switching away from tempting alternatives, containing unplanned exploration, and stopping when absorbed. Support curiosity and concentration without moral judgments or inferred diagnoses.
 
@@ -12,7 +12,7 @@ On September 24, Jihao reported that none of the project work assigned by weekda
 
 ## User and product direction
 
-Initial user: Jihao, privately, with expressed personal preferences. A hosted Next.js + TypeScript app remains the product direction; M1 will run on Vercel Hobby with Vercel Authentication protecting the entire deployment (All Deployments). The database will be chosen separately before implementation. Later public usefulness is a direction, not approved audience scope. MyWork is also a portfolio project that should demonstrate explainable choices and honest engineering evidence. Broader psychological adaptation and public claims require research first.
+Initial user: Jihao, privately, with expressed personal preferences. A hosted Next.js + TypeScript app remains the product direction; M1 will run on Vercel Hobby with Vercel Authentication protecting the entire deployment (All Deployments). Neon Free PostgreSQL is selected for M1, with server-only access. Later public usefulness is a direction, not approved audience scope. MyWork is also a portfolio project that should demonstrate explainable choices and honest engineering evidence. Broader psychological adaptation and public claims require research first.
 
 Jobs to be done:
 
@@ -27,7 +27,7 @@ Jobs to be done:
 
 IN: persistent tasks, manually selected work, start/report/resume sessions, partial/skipped/blocked/completed/unreported outcomes, resumption notes, references and evidence, dependencies, optional saved questions, correctable history, and three simple views: Today, Progress, Review. One primary action is prominent while the broader plan stays available. No chat, essays, streaks, or extensive setup is required.
 
-OUT: calendar writes, MCP access, external notifications, unattended supervision, social ingestion or posting, platform credentials, general module framework, public accounts/multi-user release, psychological profiling/adaptation, clinical claims, and engagement optimization. Vercel Hobby and Vercel Authentication are confirmed for M1; the database remains undecided. No separate application-auth provider has been selected. The milestone below is smaller than the complete first release.
+OUT: calendar writes, MCP access, external notifications, unattended supervision, social ingestion or posting, platform credentials, general module framework, public accounts/multi-user release, psychological profiling/adaptation, clinical claims, and engagement optimization. Vercel Hobby and Vercel Authentication are confirmed for M1; Neon Free PostgreSQL is selected. No separate application-auth provider has been selected. The milestone below is smaller than the complete first release.
 
 ## Confirmed M1 context
 
@@ -128,4 +128,4 @@ Conduct participatory research with intended users and appropriate professional 
 
 ## Review dependencies
 
-The four foundational answers are confirmed in DECISIONS.md (D13–D16); see ROADMAP.md for the updated first milestone. Before implementation, resolve its remaining database, persistence, recovery, and access-design choices and produce a focused ARCHITECTURE.md with reasons, record model, boundaries, and security design. Hosting and deployment protection are explicitly selected in D15. Database selection, schema, research conclusions, and authorization to provision or deploy remain separate.
+The four foundational answers are confirmed in DECISIONS.md (D13–D16); see ROADMAP.md for the updated first milestone. D17–D21 confirm the database, architecture, access baseline, and bounded-trial recovery approach; see ARCHITECTURE.md and M1-IMPLEMENTATION.md. Exact schema/tooling and recovery configuration remain to specify. The user has reserved a separate start confirmation (D22); no implementation, provisioning, deployment, or new research conclusion is implied.

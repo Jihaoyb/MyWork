@@ -1,10 +1,10 @@
 # M1 database comparison
 
-2026-09-25 · proposal for review · no provider selected or provisioned
+2026-09-25 · Neon Free PostgreSQL selected (D17) · not provisioned
 
-## Recommendation
+## Selected database
 
-Choose **Neon Free Postgres**, with all database access through the Next.js server. This is an assistant recommendation, not a confirmed decision. Supabase Free Postgres is a credible alternative; its earlier mention was never ratification.
+Use **Neon Free Postgres**, with all database access through the Next.js server. The user confirmed this recommendation after reviewing alternatives (D17). Supabase Free Postgres remains an alternative, not selected infrastructure. Implementation and provisioning await the separate start instruction.
 
 Postgres stores related records in tables and can commit several changes together in a transaction. For MyWork, recording a partial report, closing its session, and updating the task's next action must succeed together or leave the prior state intact. The recommendation is based on M1's needs, not on speculative public-product features.
 
@@ -26,7 +26,7 @@ Sources: [Neon official Free-plan FAQ](https://github.com/neondatabase/website/b
 
 The comparison is not a prediction of actual usage or a guarantee of permanently free operation. No account inventory, quota availability, or billing configuration has been inspected.
 
-## Proposed environment and access design
+## Confirmed environment and access baseline
 
 - Production has its own database credentials, used only by the deployed production server.
 - Development/CI/previews use synthetic data in a separate nonproduction database project. With Neon, create preview branches from that synthetic baseline, never from personal production data. Branching copies parent data unless explicitly configured otherwise. See [Neon branching primer](https://neon.com/docs/get-started-with-neon/workflow-primer).
@@ -34,11 +34,11 @@ The comparison is not a prediction of actual usage or a guarantee of permanently
 - Vercel Authentication protects the app, not direct database connections. A Vercel login is not a Supabase Auth session. If Supabase is selected, enable RLS from the first migration as PROCESS.md requires, keep app tables unexposed to public API roles, and design policies for the actual server runtime role. Do not assume an `auth.uid()` policy works with Vercel Authentication alone.
 - No production database credentials in local development or PR CI. Any later production backup/migration operation must run in an explicitly production-scoped operational context; document it separately.
 
-## Recovery choice before real use
+## Recovery for the bounded M1 trial
 
-Recommendation: start with user-triggered, complete exports after each day of actual use and before migrations, plus one verified restore into an isolated recovery target before depending on M1. Exports must preserve task/session/report IDs, corrections, references, dependencies, and schema version. Store them encrypted outside Git and outside the database provider; choose the destination and retention before implementation.
+Confirmed trial approach (D21): user-triggered, complete exports after each day of actual use and before migrations, plus one verified restore into an isolated recovery target before depending on M1. Exports must preserve task/session/report IDs, corrections, references, dependencies, and schema version. Store them encrypted outside Git and outside the database provider; choose the destination, retention, and encryption/key handling before implementing real-data recovery and before real-data use.
 
-This means **changes since the last successful export can be lost**. A missed export enlarges that window. Neon's short restore history is extra protection, not a substitute for exports. If this manual burden or possible loss is unacceptable, design automated backups or paid recovery before launch. No backup schedule, new storage account, or paid plan is authorized by this document.
+This means **changes since the last successful export can be lost**. A missed export enlarges that window. Neon's short restore history is extra protection, not a substitute for exports. This approach is limited to a bounded trial with recoverable data. Review automated backups before ongoing daily reliance; if the trial cannot tolerate this loss window, resolve recovery before real-data use. No backup schedule, new storage account, or paid plan is authorized by this document.
 
 Use a database-native logical dump for operational recovery and consider a user-readable export separately; they serve different purposes. Supabase explicitly recommends independent exports on Free. Postgres documents consistent logical dumps and restoration; verify provider permissions and role recreation in the eventual runbook. Sources: [Supabase backups](https://supabase.com/docs/guides/platform/backups), [Postgres SQL dump](https://www.postgresql.org/docs/current/backup-dump.html).
 

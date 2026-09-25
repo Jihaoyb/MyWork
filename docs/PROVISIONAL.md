@@ -16,8 +16,8 @@ These are recommendations, not confirmed decisions. No unanswered question autho
 
 ## Architecture recommendations — 2026-09-25
 
-- **P10:** Neon Free Postgres for M1, with server-only access. Compare Supabase Free in DATABASE.md; no provider chosen.
-- **P11:** One Next.js modular monolith with server-rendered reads, Server Actions, a shared task service, and separate production/synthetic nonproduction storage. ARCHITECTURE.md describes the proposed records, mutation safeguards, access boundary, and tests; all new design details await review.
-- **P12:** User-triggered complete exports after actual-use days and before migrations, stored encrypted outside Git/provider; rehearse restoration before reliance. Acceptable loss, storage destination, and retention remain open. No recurring backup task is authorized.
+- **P10 — confirmed:** Neon Free Postgres with server-only access; promoted to D17 after the alternatives discussion and explicit user confirmation.
+- **P11 — confirmed baseline:** One Next.js modular monolith with server-rendered reads, Server Actions, a shared task service, and separate production/synthetic nonproduction storage; promoted to D18–D20. Exact schema/tooling and operational configuration still need implementation detail, not a new architecture selection.
+- **P12 — confirmed for bounded M1 trial:** Manual encrypted exports and rehearsed restore, promoted to D21. Loss since the last successful export is the stated limitation; destination, retention, and encryption/key handling remain open before real-data use. Revisit automation before ongoing daily reliance. No recurring backup task is authorized.
 
 Timing and reminder behavior must be configurable before trials depend on them. Dashboard-only delivery remains confirmed. There are no clinical prescriptions, new notification channels, or scheduled automations here. Change one setting at a time after reviewing experience; record evidence and user ratification in DECISIONS.md.
