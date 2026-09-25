@@ -4,7 +4,7 @@ You are starting **MyWork** — my personal work-management dashboard — as a b
 
 ## Who I am and how I work
 
-- I'm Jihao Ye, early-career software engineer (BS CS 2025), job-hunting. This project is both a real tool I will use daily and a portfolio piece that must demonstrate production judgment.
+- MyWork is both a tool I will use daily and a portfolio project that must demonstrate production judgment.
 - I learn by building WITH understanding. When you present a choice, teach it: what it is, the 2–3 realistic options, each option's trade-offs, and your recommendation with reasons. I want to be able to defend every decision in an interview.
 - Working agreements (carried over from my portfolio project):
   - Plan before code. Atomic, themed commits. Feature branch → PR → I review → merge commit (never squash). Exception: while the repo is docs-only (Phase 0), commit docs straight to main after each round — the PR rule starts when code exists.

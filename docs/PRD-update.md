@@ -2,6 +2,8 @@
 
 Decision date: September 24, 2026
 
+Documentation cleanup September 25, 2026: unrelated personal context removed at the user's request. Original text remains in Git history.
+
 This focused addendum records the decisions from the current conversation and revises the direction in the supplied MyWork kickoff brief. It is not a claim that a complete PRD, repository, or application has been implemented. Integrate it into the repository's PRD, decisions, and roadmap during the next documentation session.
 
 ## 1. Confirmed direction
@@ -18,8 +20,6 @@ This focused addendum records the decisions from the current conversation and re
 | Exact check-in timings, reminder behavior, and focus periods below. | Provisional recommendations to trial |
 
 The current functional needs are difficulty starting intended work, shifting away from tempting alternatives, containing unplanned deep exploration, and stopping once absorbed. Preserve curiosity and sustained concentration while helping the user choose when to explore. The product should describe these needs without moral judgments or inferred diagnoses.
-
-Current project baseline: on September 24, Jihao reported that none of the project work assigned by the weekday planners had been started. Existing repository implementations still exist. Study completion and unrelated career activities remain unknown unless separately reported or evidenced.
 
 ## 2. Smallest useful release
 
@@ -115,4 +115,4 @@ Before advancing beyond the core loop, demonstrate these scenarios:
 
 During the first week, examine starts reported, useful task progress, ease of resumption, stopping at chosen boundaries, and perceived check-in burden. Treat timer duration as time elapsed, not proof of concentration. Do not optimize for app engagement or total hours. Change one setting at a time after reviewing the user's experience.
 
-MyWork development must replace a chosen portion of existing project time when implementation begins. It is not an additional sixth workload. The next planning decision is which existing project allocation it replaces; this addendum does not change the calendar or initiate implementation.
+This addendum does not change the calendar or initiate implementation.

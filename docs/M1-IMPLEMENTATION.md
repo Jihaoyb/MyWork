@@ -13,7 +13,6 @@ The selected design is ready to guide implementation. Operational details below 
 | Area | Choice |
 | --- | --- |
 | Product | Private, customized progress tracking; choose → start → report partial/skipped → resume the same task. |
-| Capacity | M1 temporarily replaces Unity work time. |
 | Task input | Manually enter/select that day's existing ChatGPT scheduled-task output; keep the stated observable outcome and source. |
 | Completion | Outcome achieved and reported; calendar/time/generated assignments never imply completion. |
 | Success | Resumption without replanning first; easier starting second; stopping-support trials later. |
@@ -24,7 +23,7 @@ The selected design is ready to guide implementation. Operational details below 
 | Environments | Separate production and synthetic nonproduction storage; previews branch only from synthetic data; no production credentials in PR CI. |
 | Recovery | Manual encrypted exports for a bounded trial, plus a verified restore. Changes since the last successful export may be lost; review automation before ongoing daily reliance. |
 
-Authoritative choices and rationale: DECISIONS.md D13–D22. Technical behavior and verification: ARCHITECTURE.md. Historical provider facts: DATABASE.md; recheck before provisioning.
+Authoritative choices and rationale: DECISIONS.md D14–D22. Technical behavior and verification: ARCHITECTURE.md. Historical provider facts: DATABASE.md; recheck before provisioning.
 
 ## Build sequence after start confirmation
 

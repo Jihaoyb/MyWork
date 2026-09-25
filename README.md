@@ -47,7 +47,6 @@ Neon Free PostgreSQL is confirmed. One Next.js application will use server-rende
 
 The foundational decisions were confirmed on September 25, 2026:
 
-- M1 temporarily replaces Unity work time.
 - Use that day's task from the existing ChatGPT scheduled task. Done means its stated observable outcome is achieved and reported.
 - Host on Vercel Hobby with Vercel Authentication protecting the entire deployment, with Neon Free PostgreSQL for storage.
 - Prioritize resuming unfinished work without replanning. Easier starting is secondary; test stopping support later.
