@@ -6,7 +6,7 @@ MyWork starts with progress tracking and daily execution, customized for Jihao. 
 
 ## Current status
 
-**M1 design confirmed; awaiting the instruction to start implementation.** The repository contains requirements, confirmed decisions, remaining experiments, architecture, an implementation handoff, and a progress log. Application behavior has not been implemented or tested.
+**M1 design confirmed; awaiting the instruction to start implementation.** The repository contains requirements, confirmed decisions, remaining experiments, architecture, an M1 design summary, and a progress log. Application behavior has not been implemented or tested.
 
 There is no application scaffold, dependency setup, database, authentication implementation, CI pipeline, or deployment yet. There are no install or run commands at this stage.
 
@@ -51,7 +51,7 @@ The foundational decisions were confirmed on September 25, 2026:
 - Host on Vercel Hobby with Vercel Authentication protecting the entire deployment, with Neon Free PostgreSQL for storage.
 - Prioritize resuming unfinished work without replanning. Easier starting is secondary; test stopping support later.
 
-The database and architecture recommendations are now confirmed. Manual encrypted exports and a tested restore cover a bounded M1 trial; destination and retention must be specified before real-data use, and automation reviewed before ongoing daily reliance. M1 retains manual task entry; new daily assignments do not automatically replace unfinished work. Follow the [implementation handoff](docs/M1-IMPLEMENTATION.md) when Jihao explicitly confirms the start. Until then, no scaffold, installation, provisioning, or deployment.
+The database and architecture recommendations are now confirmed. Manual encrypted exports and a tested restore cover a bounded M1 trial; destination and retention must be specified before real-data use, and automation reviewed before ongoing daily reliance. M1 retains manual task entry; new daily assignments do not automatically replace unfinished work. The [M1 design summary](docs/M1-IMPLEMENTATION.md) records the selected stack and rationale.
 
 ## Later work
 
@@ -69,7 +69,7 @@ These are later directions, not implemented features. The original publishing-fi
 | [PRD](docs/PRD.md) | Confirmed M1 direction and acceptance scenarios; broader scope remains staged. |
 | [Database comparison](docs/DATABASE.md) | Selected Neon database, alternatives, costs, and trial recovery limits. |
 | [Architecture](docs/ARCHITECTURE.md) | Confirmed M1 architecture baseline and remaining implementation details. |
-| [Implementation handoff](docs/M1-IMPLEMENTATION.md) | Build order, verification gates, and remaining details; awaiting start confirmation. |
+| [M1 design summary](docs/M1-IMPLEMENTATION.md) | Context, selected technologies, and decision rationale. |
 | [Decisions](docs/DECISIONS.md) | Confirmed choices, reasons, and open questions. |
 | [Provisional suggestions](docs/PROVISIONAL.md) | Unratified recommendations and experiments. |
 | [Roadmap](docs/ROADMAP.md) | First-milestone plan and later sequencing. |

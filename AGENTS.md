@@ -10,7 +10,7 @@ Before doing any work, read these files completely, in order:
 6. `docs/ROADMAP.md` — milestone scope and review gates.
 7. `docs/LOG.md` — actual progress, evidence, and next action.
 8. `docs/DATABASE.md` and `docs/ARCHITECTURE.md` — confirmed technical baseline and remaining implementation details.
-9. `docs/M1-IMPLEMENTATION.md` — work order and readiness gates.
+9. `docs/M1-IMPLEMENTATION.md` — concise M1 context, selected stack, and decision rationale.
 
 Begin each future session with two sentences stating where the project stands and what comes next. Repository records, never chat memory, are the durable source of truth. New explicit user instructions take precedence; record their effects. Where the original process conflicts with the update, the update wins. `docs/MyWork-PRD-update.md` is the preserved original import; `docs/PRD-update.md` is its canonical copy. Consult the canonical file going forward.
 
@@ -25,3 +25,5 @@ Plan before code. While docs-only, use atomic documentation commits directly on 
 Keep decisions, roadmap, and progress log current. Record what actually happened, pending feedback, and one exact next action. Revisit provisional choices using observed evidence. Read-only reference access to `/Users/jihaoy/dev/jihaoyb.github.io` is permitted; edits are forbidden. Secrets never enter the repository, production credentials stay in production, and potential costs must be flagged before they exist.
 
 Documentation scope (D23): include only information relevant to MyWork's product, architecture, implementation, verification, and operation. Omit unrelated personal background and allocations involving other projects. Preserve project-relevant resource references and repository safety constraints. Source briefs were cleaned under this explicit user instruction; earlier versions remain in Git history. Do not restore removed context from history or chat memory.
+
+Keep M1-IMPLEMENTATION.md concise: project context, selected technologies, decisions and rationale only. Agent instructions belong here; process belongs in PROCESS.md; milestone sequencing and acceptance belong in ROADMAP.md. Do not add session instructions, authorization gates, or a build walkthrough to the M1 design summary.

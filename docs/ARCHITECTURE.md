@@ -118,10 +118,10 @@ The confirmed bounded-trial backup approach (D21) is user-triggered exports afte
 - CI baseline: typecheck, lint, state/integration tests, and build; browser coverage for the core loop. Framework/tool versions and CI deployment mechanism need a final implementation plan.
 - Operational minimum: structured event/error IDs, mutation outcome and latency, no personal report text; visible storage errors and a recovery runbook. No background jobs means no job heartbeat in M1. Define alerts when adding unattended work.
 
-## Evolution and implementation handoff
+## Evolution
 
 Next.js remains the React frontend if a backend is later extracted. Framework-independent task rules can move behind an HTTP or MCP adapter, though extraction still requires authentication, network-failure handling, and deployment work. A publishing worker is a possible future operational boundary; separate task/report services are not an M1 goal because their writes must remain consistent.
 
 A Neon-to-Supabase move would retain the PostgreSQL engine but change the managed platform. It would still require data migration and verification of versions, extensions, permissions, connections, and any provider-specific integrations. It is not a planned migration or a claim of interchangeability.
 
-See [M1 implementation handoff](M1-IMPLEMENTATION.md) for the work order after the user's start confirmation. The PRD remains the product authority. Exact schema, driver/ORM and migration tooling, deletion/export/privacy details, recovery destination/retention, and the real acceptance task text remain to settle before their affected implementation. No paid service or public-user security design has been approved.
+See [M1 design summary](M1-IMPLEMENTATION.md) for the selected stack and rationale. The PRD remains the product authority. Exact schema, driver/ORM and migration tooling, deletion/export/privacy details, recovery destination/retention, and the real acceptance task text remain to settle before their affected implementation. No paid service or public-user security design has been approved.

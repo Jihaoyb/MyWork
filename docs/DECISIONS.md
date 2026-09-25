@@ -32,7 +32,7 @@ The user explicitly asked to confirm the final recommendations and record the ch
 | D19 | Modular monolith with framework-independent task rules and server-only persistence; keep tasks, sessions, and reports together. | Internal module boundaries provide independent tests and clearer ownership now. Extract a worker/service only for demonstrated operational needs; no speculative microservices or module framework. | CONFIRMED |
 | D20 | Private, sole-user deployment with Vercel Authentication on All Deployments; separate production and synthetic nonproduction databases, restricted runtime credentials, atomic writes and safe retries. | No additional app login for M1. Production data/credentials never enter previews or PR CI. Deployment access is separate from database access. | CONFIRMED |
 | D21 | Manual encrypted exports after actual-use days and before migrations for a bounded M1 trial, with a verified restore before reliance. | Compared automated backups and paid recovery. Manual exports minimize initial setup but can lose changes since the last successful export. Review automation before ongoing daily reliance; no backup schedule is authorized now. Destination, retention, and encryption/key handling must be specified before real-data use. | CONFIRMED trial approach; operational details OPEN |
-| D22 | Record the baseline and prepare the implementation handoff; wait for the user's explicit start confirmation. | Design agreement does not authorize scaffolding, dependencies, provisioning, deployment, or paid upgrades in this round. | CONFIRMED |
+| D22 | Record the baseline and prepare the M1 design summary; wait for the user's explicit start confirmation. | Design agreement does not authorize scaffolding, dependencies, provisioning, deployment, or paid upgrades in this round. | CONFIRMED |
 
 ## Process reconciliation
 
@@ -54,7 +54,7 @@ Before use, verify Jihao's authorized access and denial of unauthorized access t
 
 ## Decisions deferred until needed
 
-- Database and architecture are selected in D17–D20. Next: await implementation go-ahead and follow M1-IMPLEMENTATION.md. Supabase and GitHub OAuth/Auth.js are not selected for M1. Resolve concrete versions/driver/migration tooling and account/region configuration at the appropriate implementation step.
+- Database and architecture are selected in D17–D20. Next: await implementation go-ahead. M1-IMPLEMENTATION.md summarizes the selected design. Supabase and GitHub OAuth/Auth.js are not selected for M1. Resolve concrete versions/driver/migration tooling and account/region configuration at the appropriate implementation step.
 - Before implementation: record/task lifecycle details, report corrections, deletion/export scope, retention, security design, test ownership, repository conventions, and cost implications. Draft requirements in PRD.md are not approval of an implementation choice.
 - Before UI work: design language, component strategy, mobile posture, accessibility verification, dark mode, and control details.
 - After core loop evidence: calendar writer and permissions; MCP trust boundaries and interactive/scheduled access.

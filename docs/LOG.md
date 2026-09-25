@@ -61,3 +61,9 @@ Read the user's answers and review feedback, update decision statuses and the M1
 - Added D23 and future-session guidance; retired D10/D13 without reusing their IDs. Original content remains in Git history. Both PRD update copies remain synchronized.
 - M1 technical choices, acceptance flow, and explicit implementation-start gate are unchanged. No application or infrastructure work occurred.
 - Next action: wait for the user's instruction to start M1.
+
+## 2026-09-25 — concise M1 design reference
+
+- Replaced the implementation walkthrough with a concise M1 context, selected-stack/rationale table, core decisions, and a short list of unselected technical details.
+- Removed session instructions, authorization sections, build sequence, and execution checklists from M1-IMPLEMENTATION.md; updated descriptions and agent guidance to preserve this document scope.
+- Technical choices and the implementation-start status are unchanged. No application or infrastructure work occurred.

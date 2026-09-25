@@ -6,7 +6,7 @@ M1 baseline confirmed · updated 2026-09-25. Replaces the original publishing-fi
 
 Inventory and preserve existing files; retain Git history; add session guidance, separate confirmed/provisional records, reconcile PRD, and propose the first milestone. Ask no more than four foundational questions per round. No implementation or deployment.
 
-Foundational answers recorded on 2026-09-25: existing ChatGPT daily-task source, Vercel Hobby with whole-deployment Vercel Authentication, and resumption as primary success. Neon Free Postgres and the one-app architecture are confirmed in D17–D20; bounded-trial recovery is D21. M1-IMPLEMENTATION.md records the build order and remaining operational details. Next: wait for the user's explicit start confirmation (D22). No implementation or deployment has begun.
+Foundational answers recorded on 2026-09-25: existing ChatGPT daily-task source, Vercel Hobby with whole-deployment Vercel Authentication, and resumption as primary success. Neon Free Postgres and the one-app architecture are confirmed in D17–D20; bounded-trial recovery is D21. M1-IMPLEMENTATION.md summarizes the context, selected stack, and decision rationale. Next: wait for the user's explicit start confirmation (D22). No implementation or deployment has begun.
 
 ## M1 — resume one real task
 
@@ -22,7 +22,7 @@ Confirmed M1 scope:
 
 Exclude timers/reminders, automatic scheduling, calendar/MCP, publishing, broad task-management features, saved-question UI, and personalization. Use a manually chosen stopping point; timed check-ins can follow. No elaborate dashboard shell or general module framework.
 
-Before coding: wait for the user's explicit start instruction, then follow M1-IMPLEMENTATION.md. Database and architecture selection are complete; resolve exact tools, versions, schema and operational details when needed without reopening D14–D21. Remaining material security/cost choices still require a recorded decision.
+Before coding: wait for the user's explicit start instruction. Database and architecture selection are complete; resolve exact tools, versions, schema and operational details when needed without reopening D14–D21. Remaining material security/cost choices still require a recorded decision.
 
 Definition of Done:
 
